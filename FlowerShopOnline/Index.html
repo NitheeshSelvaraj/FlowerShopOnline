@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css" href="Styles\FlowerShopOnlineStyleSheet.css" />
+    <script src="Scripts\SecurePaymentPage_Validation.js"></script>
+</head>
+<body>
+    <form id="paymentPage" class="formstyle">
+        <div class="content">
+            <div>
+                <h2 class="heading">FLOWER SHOP ONLINE</h2>
+            </div>
+            <div class="Backcolor">
+            </div>
+            <div class="formstyle">
+
+                <div class="leftalign">
+                    <img src="Images\Annotation 2020-02-13 120502.png" class="flowerimage" />
+                </div>
+                <div class="rightalign">
+                    <h3>Secure Payment Page</h3>
+                    <table>
+                        <tr>
+                            <td class="width">
+                                <label class="TextStyle">Select Language</label>
+                            </td>
+                            <td>
+                                <select id="ddlLanguage" class="ddlsize">
+                                    <option>English</option>
+                                </select>
+                            </td>
+                            <td rowspan="4">
+                                <img src="Images\Logo-Visa-2013.jpg" class="visacard" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width">
+                                <label class="TextStyle">Payment method</label>
+                            </td>
+                            <td>
+                                <label><b>Visa</b></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width">
+                                <label class="TextStyle">Description</label>
+                            </td>
+                            <td>
+                                <label><b>Item ordered</b></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="width">
+                                <label class="TextStyle">Amount</label>
+                            </td>
+                            <td>
+                                <label><b>&euro;100.00</b></label>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="background">
+                        <p class="HeadBackcolor">Card details<img src="Images\question-mark.jpg" class="firstquestionmark" /></p>
+                        <p class="textsize">You must fill in fields marked with *</p>
+                        <table>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Card number</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtcardNumber" size="45" Maxlength="16" autofocus="autofocus" />
+                                    <span id="errorcardNumber" style="display: none; color: red;">
+                                        Enter the valid card number(13 or 16 digit)
+                                    </span>
+                                    <span id="nullcardNumber" style="display: none; color: red;">
+                                        Card number required(13 or 16 digit)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Security code</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="txtsecurityCode" size="8" Maxlength="8" autofocus="autofocus" />
+                                    <span id="errorsecurityCode" style="display: none; color: red;">
+                                        Enter the valid security code(8 digit)
+                                    </span>
+                                    <span id="nullsecurityCode" style="display: none; color: red;">
+                                        Security code required(8 digit)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Expiry date</label>
+                                </td>
+                                <td>
+                                    <select id="expiryMonth" autofocus="autofocus">
+                                        <option></option>
+                                        <option>Jan</option>
+                                        <option>Feb</option>
+                                    </select>
+                                    &nbsp
+                                        <select id="expiryYear" autofocus="autofocus">
+                                            <option></option>
+                                            <option>2021</option>
+                                        </select>
+                                    <span id="nullmonthAndYear" style="display: none; color: red;">
+                                        Expiry Date required
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Cardholder's name</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtcardholdername" size="45" Maxlength="25" autofocus="autofocus" />
+                                    <span id="errorcardHolderName" style="display: none; color: red;">
+                                        Enter the valid name
+                                    </span>
+                                    <span id="nullcardHolderName" style="display: none; color: red;">
+                                        Name required
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="HeadBackcolor">Cardholder details<img src="Images\question-mark.jpg" class="secondquestionmark" /></p>
+                        <p class="textsize">You must fill in fields marked with *</p>
+                        <table>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Address1</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtAddress" size="45" autofocus="autofocus" />
+                                    <span id="errorAddress" style="display: none; color: red;">
+                                        Enter the valid address
+                                    </span>
+                                    <span id="nullAddress" style="display: none; color: red;">
+                                        Address required
+                                    </span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">&nbsp;&nbsp;Address2</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtsecondaddress" size="45" autofocus="autofocus" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">&nbsp;&nbsp;Address3</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtthirdaddress" size="45" autofocus="autofocus" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Town/City</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txttownorcity" size="45" Maxlength="20" autofocus="autofocus" />
+                                    <span id="nullcity" style="display: none; color: red;">
+                                        City is required
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">&nbsp;&nbsp;Region</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtregion" size="45" Maxlength="20" autofocus="autofocus" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Postcode/Zip code</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtpostcodeorzip" size="18" Maxlength="6" autofocus="autofocus" />
+                                    <span id="errorzipCode" style="display: none; color: red;">
+                                        Enter the valid zipcode(6 digit)
+                                    </span>
+                                    <span id="nullzipCode" style="display: none; color: red;">
+                                        Zipcode required(6 digit)
+                                    </span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Country</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <select id="country" autofocus="autofocus">
+                                        <option>United Kingdom</option>
+                                        <option>India</option>
+                                    </select>
+                                    <span id="nullcountry" style="display: none; color: red;">
+                                        Country required
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">&nbsp;&nbsp;Telephone</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txttelephone" size="18" Maxlength="10" autofocus="autofocus" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">&nbsp;&nbsp;Fax</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtfax" size="18" Maxlength="9" autofocus="autofocus" />
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="width">
+                                    <label class="TextStyle">* Email address</label>
+                                </td>
+                                <td class="Inputwidth">
+                                    <input type="text" id="txtemail" size="45" autofocus="autofocus" />
+                                    <span id="errorEmail" style="display: none; color: red;">
+                                        Enter the valid email(ram@gmail.com)
+                                    </span>
+                                    <span id="nullEmail" style="display: none; color: red;">
+                                        Email required(ram@gmail.com)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table>
+                        <tr>
+                            <td class="buttonwidth">
+                                <img src="Images\refresh_image.png" class="linkimage" />&nbsp
+                                        <button type="reset" class="btnlink">START AGAIN</button>
+                            </td>
+
+                            <td rowspan="2" class="column">
+                               <button type="button" id="makepayment" class="btnlink" onclick="Validate()">MAKE PAYMENT </button>
+                               &nbsp
+                                        <img src="Images\gg.png" class="secondlinkimage" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="Images\cancel_image.png" class="linkimage" />&nbsp
+                                        <button type="button" onclick="cancel()" class="btnlink">CANCEL</button>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <div class="slimline">
+                    </div>
+                    <h3>Refunds and Returns</h3>
+                    <p class="lastlinecolor">For more information visit our <a href="">Refunds and Returns Policy.</a></p>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="Images\worldpay.gif" />
+                            </td>
+                            <td class="worldpay">For help with your payment visit the <a href="">WorldPay Help</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="end">
+                <p class="thanking"><b>Thank you for shopping at Flowershop. Have a nice day</b></p>
+            </div>
+        </div>
+
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+.content{
+    border:2px solid grey;
+    margin-left:250px;
+    margin-right:250px;
+    width:750px;
+}
+
+.heading{
+    margin-top:10px;
+    margin-left:30px;
+    font-family:Arial;
+    color:steelblue;
+}
+
+.Backcolor {
+   background-color:yellowgreen;
+   height:25px;
+}
+
+.formstyle{
+    display:flex;
+}
+
+.leftalign{
+    float:left;
+    width:26%;
+}
+
+.flowerimage{
+    margin-left:40px;
+    margin-top:65px;
+    width:100px;
+    height:100px;
+}
+
+.rightalign{
+    float:left;
+    width:70%;
+}
+
+h3{
+    width:230px;
+    font-family:Arial;
+    color:steelblue;
+}
+
+.width{
+    width:130px;
+}
+
+.TextStyle{
+    font-family:Arial;
+    font-size:11px;
+}
+
+.ddlsize{
+    height:20px;
+    width:190px;
+}
+
+.visacard{
+    margin-left:130px;
+    margin-top:40px;
+    width:50px;
+    height:50px;
+    border:2px solid grey;
+}
+
+.background{
+    background-color:navajowhite;
+}
+
+.HeadBackcolor {
+   background-color:yellowgreen;
+   color:white;
+   height:20px;
+}
+
+.firstquestionmark{
+    width:15px;
+    height:15px;
+    float:right;
+    margin-right:-18px;
+}
+
+.textsize{
+    font-size:15px;
+}
+
+.secondquestionmark{
+    width:15px;
+    height:15px;
+    float:right;
+    margin-right:-18px;
+}
+
+.buttonwidth{
+    width:140px;
+}
+
+.linkimage{
+    width:15px;
+    height:15px;
+}
+
+.btnlink{
+    border:none;
+    color:blue;
+}
+
+.column{
+    padding-left:200px;
+    padding-top:8px;
+}
+
+.secondlinkimage{
+    width:25px;
+    height:25px;
+    margin-bottom:-5px;
+}
+
+.slimline{
+    background-color:limegreen;
+    height:2px;
+}
+
+.lastlinecolor{
+    color:steelblue;
+    font-family:Arial;
+    font-size:small;
+}
+
+.worldpay{
+    padding-left:60px;
+    font-size:small;
+    padding-top:2px;
+    font-family:Arial;
+}
+
+.end{
+    background-color:yellowgreen;   
+    height:50px;
+    color:navy;
+    font-family:Arial;
+    font-size:27px;
+}
+
+.thanking{
+    text-align:center;
+}
+
+
+
+
+
+/*.Tablestyle{
+    width:230px;
+}
+
+.TablePadding{
+    padding-left:20px;
+}*/
+/*.expirymonth{
+    width:45px;
+}
+.expiryyear{
+    width:70px;
+}*/
+
